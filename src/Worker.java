@@ -1,0 +1,25 @@
+public class Worker {
+    private String name;
+    private String birthDate;
+    protected String endDate;
+
+    public Worker(String name, String birthDate) {
+        this.name = name;
+        this.birthDate = birthDate;
+    }
+
+    public int getAge(){
+        int presentYear = 2023;
+        int birthYear = Integer.parseInt(birthDate.substring(6));
+
+        return presentYear-birthYear;
+    }
+
+    public double collectPay(){
+        return 0.00;
+    }
+
+    public void terminate(){
+        this.endDate = endDate;
+    }
+}
