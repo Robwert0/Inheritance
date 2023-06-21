@@ -21,7 +21,7 @@ public class Worker {
         return 0.00;
     }
 
-    public void terminate(){
+    public void terminate(String endDate){
         this.endDate = endDate;
     }
 
@@ -30,7 +30,6 @@ public class Worker {
         return "Worker{" +
                 "name='" + name + '\'' +
                 ", birthDate='" + birthDate + '\'' +
-                ", endDate='" + endDate + '\'' +
                 '}';
     }
 }

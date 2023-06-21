@@ -5,8 +5,11 @@ public class HourlyEmployee extends Employee{
         super(name, birthDate, hireDate);
         this.hourlyPayRate = hourlyPayRate;
     }
-
-    public void getDoublePay(){
-
+    @Override
+    public double collectPay(){
+        return 40*hourlyPayRate;
+    }
+    public double getDoublePay(){
+        return 2*collectPay();
     }
 }
