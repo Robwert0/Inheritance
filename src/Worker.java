@@ -9,6 +9,8 @@ public class Worker {
     }
 
     public int getAge(){
+        // year format is dd/mm/yyyy
+
         int presentYear = 2023;
         int birthYear = Integer.parseInt(birthDate.substring(6));
 
